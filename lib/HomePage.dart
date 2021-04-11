@@ -7,7 +7,7 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  var source = Api();
+  var source = Api(); //calling the api class from api.dart page
   Future getData() async {
     var response = await source.getMethod();
     return response;
