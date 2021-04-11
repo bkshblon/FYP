@@ -15,9 +15,9 @@ class _HomePageState extends State<HomePage> {
 
   @override
   Widget build(BuildContext context) {
-    return new Scaffold(
-      appBar: new AppBar(
-        title: new Text("Pet Status"),
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("Pet Status"),
         centerTitle: true,
       ),
       body: FutureBuilder(
@@ -102,7 +102,7 @@ class _HomePageState extends State<HomePage> {
                                 height: 20,
                               ),
                               Text(
-                                snap[index]['humidity'].toString() + "°C",
+                                snap[index]['humidity'].toString() + "%",
                                 style: TextStyle(
                                     color: Colors.white,
                                     fontSize: 30,

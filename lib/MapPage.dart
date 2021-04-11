@@ -33,9 +33,9 @@ class _MapPageState extends State<MapPage> {
 
   @override
   Widget build(BuildContext context) {
-    return new Scaffold(
-      appBar: new AppBar(
-        title: new Text("Track Your Pet"),
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("Track Your Pet"),
         centerTitle: true,
       ),
       body: FutureBuilder<Map<dynamic, dynamic>>(
@@ -47,8 +47,8 @@ class _MapPageState extends State<MapPage> {
               );
             }
             return FlutterMap(
-              options: new MapOptions(
-                  center: new LatLng(
+              options: MapOptions(
+                  center: LatLng(
                       double.parse(
                         snapshot.data["latitude"],
                       ),
