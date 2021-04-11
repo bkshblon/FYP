@@ -14,4 +14,3 @@ class Api {
     return responsBody;
   }
 }
-//List le lang gardai xa
