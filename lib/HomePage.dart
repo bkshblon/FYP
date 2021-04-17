@@ -41,6 +41,7 @@ class _HomePageState extends State<HomePage> {
               child: Text("Error Fetching data"),
             );
           }
+          //adding pull to refresh
           return RefreshIndicator(
             onRefresh: () async {
               setState(() {
